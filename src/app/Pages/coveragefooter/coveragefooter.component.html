@@ -1,0 +1,17 @@
+<div class="row contentFooter">
+  <div class="col-sm-3 col">
+    <button type="button" class="btn btn-link cancel-button" (click)="MovePrevious()">CANCEL</button>
+  </div>
+  <div class="col-sm-4 col txtcenter margin-top-10">
+    <div>
+      <span class="step-ball"  [ngClass]="{'checkrecorddetails' : orderNo == 1, '' : orderNo != 1 }" ></span>
+      <span class="step-ball" [ngClass]="{'checkrecorddetails' : orderNo == 2, '' : orderNo != 2 }"></span>
+      <span class="step-ball" [ngClass]="{'checkrecorddetails' : orderNo == 3, '' : orderNo == 2 }"></span>
+     </div>
+    <div> Step {{orderNo}} of 3</div>
+  </div>
+  <div class="col-sm-5 col txtright">
+    <button class="btn previous" (click)="MovePrevious()"> <img src= "assets\Images\Previoussign.png" class="imgprevious" alt="Previous" > PREVIOUS</button>
+    <button type="button" class="btn btn-primary save-next-button" (click) = "CheckBussinessView()">SAVE & NEXT</button>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="container-fluid login-bg">
+  <div class="container h-100">
+    <div class="row align-items-center h-100 login">
+      <div class="col mx-auto">
+        <h3>INSURANCE <span class="first">FIRST</span></h3>
+        <div class="bg-white">
+         <h4 class="margin-bottom-30">LOGIN</h4>
+
+         <form class="col">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Username</label>
+            <input type="text" [ngClass] = "{'errortxt': validuser == false}" class="form-control" name="Username" required autofocus  placeholder="Enter Username" [(ngModel)]="Employeeusername" (blur)="ValidUserName()">
+            <div class="margin-bottom-30">
+              <div *ngIf="!validuser" class="Error Errormessage">
+              {{invalidusername}}
+            </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2 lblpassword" style="margin: 8px auto;">Password</label>
+            <input  type="password" [ngClass] = "{'errortxt': validpass == false}" class="form-control"  placeholder="Enter Password" required [(ngModel)]="Employeepassword" name="Password" (blur)="ValidPassword()" >
+            <div class="margin-bottom-30">
+              <div *ngIf="!validpass" class="Error Errormessage">
+              {{invalidpassword}}
+            </div>
+            </div>
+          </div>
+          <div class="form-group remember margin-bottom-30">
+            <input type="checkbox" id="rememberMe" class="marginrememberme" [checked]="saveUsername" name="username" (change)="saveUsername = !saveUsername"> <label for="rememberMe"> Remember Me</label>
+            <button class="pullright loginbtn" (click)="LoginData()" >LOGIN</button>
+          </div>
+        </form>   
+      </div>
+    </div>
+  </div>
+</div>
+</div>

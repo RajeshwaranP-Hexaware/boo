@@ -1,0 +1,392 @@
+<div class="main-content"  *ngIf = "orderNo == 1">
+  <div class="container-fluid ">
+  <div class="row margin-bottom-20 margin-top-30">
+    <div class="col-12 txtright"><label>Client ID:</label> {{clientId}}
+    </div>
+  </div>
+  <div class="row margin-bottom-20">
+    <div class="col-9 ">
+      Has your company had any General Liability, Property or Worker's Compensation claims in the past 5 years? </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" checked>
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-20">
+    <div class="col-6 col ">
+      <div class="form-group cover">
+        <label> Policy from date <span class="required">*</span></label>
+        <input type="date" placeholder="MM/DD/YYYY" class="date" [(ngModel)]="policyFromdate">
+      </div>
+    </div>
+    <div class="col-6 col">
+      <div class="form-group cover">
+        <label>Policy to date <span class="required">*</span> </label>
+        <input type="date" placeholder="MM/DD/YYYY" class="date" [(ngModel)]="policyToDate">
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-20">
+    <div class="col-6 col ">
+      <div class="form-group cover">
+        <label> Claim Number</label>
+        <input type="text" placeholder="CL973888" [value] = "claimnumber">
+      </div>
+    </div>
+    <div class="col-6 col">
+      <div class="form-group cover">
+        <label>Total Incurred  <span class="required">*</span> </label>
+        <input type="text" placeholder="$23000" [value] = "totalincurred">
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-20">
+    <div class="col-6 col ">
+      <div class="form-group cover">
+        <label> Provider</label>
+        <input type="text" placeholder="Nationwide" [value] = "provider">
+      </div>
+    </div>
+    <div class="col-6 col">
+      <div class="form-group cover">
+        <label>Loss date <span class="required">*</span> </label>
+        <input type="date" placeholder="MM/DD/YYYY" class="date" [(ngModel)]="lossdate">
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-20">
+    <div class="col-6 col ">
+      <div class="form-group cover">
+        <label>Claim Type<span class="required">*</span></label>
+        <select [(ngModel)]="claimtype">
+          <option [value]="claimtype">{{claimtype}}</option>
+          </select>
+      </div>
+    </div>
+    <div class="col-6 col">
+      <div class="form-group cover">
+        <label>Status<span class="required">*</span></label>
+        <select [(ngModel)]="status">
+          <option [value]="status">{{status}}</option>
+          </select>
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-20">
+    <div class="col-10 col ">
+      How many wind/hail losses have you incurred in the prior 3 completed policy years and the current year to date?
+      </div>
+      <div class="col-2 col cover">
+        <input type="text" class="policyyearwidth" name="" placeholder="4" class="" id="">
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="main-content" *ngIf = "orderNo == 2">
+  <div class="container-fluid">
+    <div class="row margin-bottom-15">
+      <div class="col-12 bold">
+        Building Coverage
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9 ">
+        Would you like coverage for your building? <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch2" class="onoffswitch1-checkbox" id="onoffswitch2" [checked] = "blncoveragebuilding">
+          <label class="onoffswitch1-label" for="onoffswitch2">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        How much Building Coverage do you need? <span class="required">*</span>
+      </div>
+      <div class="col-3">
+     <input type="text" placeholder="$250000" value=${{buildingValueLimit}}>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Policy Property Base Deductible <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <select [(ngModel)] = "propertyBaseDeductible">
+            <option *ngFor="let deduct of PropertyBaseDeductible;" [selected]="deduct.value == propertyBaseDeductible "  [value]="deduct.value">${{deduct.value}}</option> 
+          <!-- <option value="" *ngFor = "let deduct of PropertyBaseDeductible">deduct.value</option> -->
+        </select>
+      </div>
+    </div>
+     <div class="row margin-bottom-50">
+      <div class="col-9">
+        Glass deductible
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch3" class="onoffswitch1-checkbox" id="onoffswitch3" [checked]="GlassDeductibleExist">
+          <label class="onoffswitch1-label" for="onoffswitch3">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+ <div class="row margin-bottom-15">
+      <div class="col-12 bold">
+        Business Contents Coverage
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9 col-">
+        Check here to decline coverage for your computers and other office contents. (Note: When your policy does not include coverage for your property, th+C14ere is no coverage for your client’s property in your "care, custody, or control") 
+        <span class="required">*</span>
+      </div>
+      <div class="col-3 col-">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch4" class="onoffswitch1-checkbox" id="onoffswitch4" [checked]="businessContentsCoverageExist">
+          <label class="onoffswitch1-label" for="onoffswitch4">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Office contents coverage (Coverage for your business personal property such as furniture, desks, chairs, and office supplies, that are primarily used in your business)  <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <select  [(ngModel)] = "businessPropertyLimit">
+          <option [value]="1000" [selected]="businessPropertyLimit=='1000'">$1000</option>
+        </select>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+       Deductible
+      </div>
+      <div class="col-3">
+        <select [(ngModel)]="businessDeductible">
+          <option [value]="500" [selected]="businessDeductible=='500'">$500</option>
+        </select>
+      </div>
+    </div>
+    <div class="row margin-bottom-15">
+      <div class="col-12 bold">
+        Computer Coverage
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        The basic policy includes a minimum of $10,000 in coverage for your computer hardware and software at this location. Do you need additional coverage at this location?
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch6" class="onoffswitch1-checkbox" id="onoffswitch6" [checked]="ComputerCoverageExist">
+          <label class="onoffswitch1-label" for="onoffswitch6">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+     <div class="row margin-bottom-15">
+      <div class="col-12 bold">
+        Business Income
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Do you use any specialized equipment or machinery at the premises that is critical to the ongoing business operation?
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch7" class="onoffswitch1-checkbox" id="onoffswitch7" [checked] = "businessIncomeExist">
+          <label class="onoffswitch1-label" for="onoffswitch7">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-15">
+      <div class="col-12 bold">
+        General Liability
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">Please indicate the amount of general liability coverage you require 
+        <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <select [(ngModel)] = "generalLiabilityLimit">
+          <option *ngFor="let deduct of liabilityLimitOccurennce;" [selected]="deduct.value === generalLiabilityLimit "   [value]="deduct.value">{{deduct.value}}</option> 
+      </select>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        PD Deductible <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <select [(ngModel)] = "pDDeductible">
+          <option *ngFor="let deduct of liabilityDeductibles;" [selected]="deduct.value == pDDeductible "  [value]="deduct.value">${{deduct.value}}</option> 
+      </select>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">PD Deductible type <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <select [(ngModel)] = "pDDeductibleType">
+          <option *ngFor="let deduct of liabilityDeductibleTypes;" [selected]="deduct.value == pDDeductibleType "  [value]="deduct.value">{{deduct.value}}</option> 
+      </select>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Do you want your quote to include coverage for Employment Practices Liability?
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch8" class="onoffswitch1-checkbox" id="onoffswitch8" [checked]="empPracticesLiabilityExist">
+          <label class="onoffswitch1-label" for="onoffswitch8">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-15">
+      <div class="col-12 col bold">
+        Data Breach
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Do you want your quote to include Data Breach coverage? (Provides coverage for loss cause by a breach of personally indentifiable information)
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch9" class="onoffswitch1-checkbox" id="onoffswitch9" [checked]="dataBreachExist">
+          <label class="onoffswitch1-label" for="onoffswitch9">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+     <div class="row margin-bottom-50">
+      <div class="col-9">
+        Data Breach - Response Expenses (such as notification expenses, crisis management expenses, monitoring services, good faith advertising, and legal/forensic services)
+      </div>
+      <div class="col-3">
+        <input type="text" placeholder="$10,000">
+      </div>
+    </div>
+     <div class="row margin-bottom-50">
+      <div class="col-9">
+        Data Breach - Defense & Liability (coverage for civil awards, settlements and judgments as a result of a Data Breach claim that you are legally obligated to pay)
+      </div>
+      <div class="col-3">
+        <input type="text" placeholder="$50,000">
+      </div>
+    </div>
+    <div class="row margin-bottom-15">
+      <div class="col-12 col bold">
+        Auto Liability
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Do you have any vehicles commercially owned/titled to your business?
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch10" class="onoffswitch1-checkbox" id="onoffswitch10"  [checked]="commercialVehicleExist">
+          <label class="onoffswitch1-label" for="onoffswitch10">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Would you like a quote for Commercial Auto coverage?
+      </div>
+      <div class="col-3">
+       <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch11" class="onoffswitch1-checkbox" id="onoffswitch11"  [checked]="commercialAutoQuoteExist">
+          <label class="onoffswitch1-label" for="onoffswitch11">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-content" *ngIf = "orderNo == 3">
+    <div class="container-fluid">
+  <div class="row margin-bottom-10 margin-top-30">
+    <div class="col-6 col">
+      <div class="form-group"><label>Document</label> <br>
+          
+		<a class='btn-upload'>
+			<label>CHOOSE FILE</label>
+			<input type="file" [disabled] = "selectfiletype == 'Select Document' " [(ngModel)]="file_source" name="file_source" size="40" [accept] = "selectfiletype" (change)="fileChange($event)"  >
+		</a>
+		&nbsp;
+		<span class='label label-info upload-info' id="upload-file-info">{{filenameinfo}}</span>
+    </div>
+      </div>
+      <div class="col-6 col">
+        <div class="form-group">
+           <label>Document Type</label>
+           <select [(ngModel)] = "selectfiletype">
+              <option *ngFor="let filetype of Filetypecollection;" [selected]="filetype == selectfiletype "  [value]="filetype">{{filetype}}</option> 
+          </select>
+           <!-- <select>
+             <option>Select Document</option>
+             <option>Select Document</option>
+             <option>Select Document</option>
+             <option>Select Document</option>
+             <option>Select Document</option>
+             
+
+           </select> -->
+        </div> 
+    </div>
+  </div>
+   <div class="row margin-bottom-10 margin-top-30">
+    <div class="col-12">
+      <div class="form-group"><label>Comment</label> 
+        <input type="text" placeholder="">
+    </div>
+      </div>
+  </div>
+     <div class="row margin-bottom-10 margin-top-30">
+    <div class="col-12 txtright">
+     <button class="upload" (click)="uploadDocumentData()">Upload</button> <button class="cancel">Cancel</button>
+      </div>
+  </div>
+     <div class="row margin-bottom-10 margin-top-30">
+    <div class="col-12 txtright">
+     <button class="add_icon bold">ADD NEW DOCUMENT</button>
+      </div>
+  </div>
+</div>
+</div>
+<app-coveragefooter></app-coveragefooter>

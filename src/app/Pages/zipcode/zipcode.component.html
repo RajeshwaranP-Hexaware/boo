@@ -1,0 +1,123 @@
+  <div class="contentSection" *ngIf="!clientLocationAndDetailsActive">
+  <form [formGroup]="ZipCodeForm" >
+    <div class=" row zip-verify-section">
+    <div class="col-sm-6 col">
+      <div class="row form-group mb-3">
+    <label class="col-sm-12 col center-block text-font">Zip Code
+        <input type="text" (keyup) = "reseterrorbln()" (keypress)="_keyPress($event)" maxlength="5" [ngClass] = "{'errortxt': errorCheck == true || blnwrongzipcode}" autofocus class="form-control" formControlName="zipCode" [(ngModel)]="zipCode" placeholder="Enter Zipcode" aria-label="Enter Zipcode" aria-describedby="basic-addon2" [class.ng-touched.ng-invalid]="errorCheck"  required>
+        <span style="color:red;  font-weight: normal  !important;" *ngIf="errorCheck">Incorrect Zipcode</span>
+        <span style="color:red;  font-weight: normal  !important;" *ngIf="blnwrongzipcode">The Zip code does not exists</span>
+    </label>      
+      
+       </div>
+      </div>
+    <div class="col-sm-6 col submit-button">
+    <button class="btn btn-outline-secondary" [ngClass] = "{'activezipcode' : zipCode.length > 0}" (click)="ZipCodeSubmit()" type="button">Submit</button>
+    </div>
+    </div>
+    </form>
+    </div>
+  <div class="contentSection" *ngIf="clientLocationAndDetailsActive">
+    <form class="row" [formGroup]="ClientDetailsLocationForm" (ngSubmit)="ClientDetailsLocationFormSubmit()">
+      
+      <div class="col-sm-6 col">
+        <div class="form-group">
+          <label class="col-sm-12 col center-block text-font">Business Name <span class="required">*</span>
+           <input class="form-control"  formControlName="businessName" [(ngModel)]="IndividualInsurance.businessName" [ngClass] = "{'discoverfielderror' : IndividualInsurance.businessName.length == 0}" (blur) = "CheckErrorMessage()" >
+           <div *ngIf = "IndividualInsurance.businessName.length == 0" class="errormessage" >
+             Please Enter your Bussines Name
+           </div>
+          </label>
+  
+        </div>
+      </div>
+    <div class="col-sm-6 col">
+        <div class="form-group">
+          <label class="col-sm-12 col center-block text-font">DBA <span class="required">*</span>
+            <input class="form-control" formControlName="dba" [(ngModel)]="IndividualInsurance.dba" [ngClass] = "{'discoverfielderror' : IndividualInsurance.dba.length == 0}" (blur) = "CheckErrorMessage()">
+            <div *ngIf = "IndividualInsurance.dba.length == 0" class="errormessage" >
+                Please Enter your DBA
+              </div>
+          </label>
+  
+        </div>
+      </div>
+    <div class="col-sm-12 col">
+         <div class="form-group">
+          <label class="col-sm-12 col center-block text-font">Is this home based business</label>
+          <div class="onoffswitch1">
+            <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" (change) = "showlocation($event)" [checked] = "blnhomebase">
+            <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col">
+    <div class="form-group">
+          <label class="col-sm-12 col center-block text-bold">Primary Business Address</label>
+        </div>
+      </div>
+  
+      <div class="col-sm-12 col">
+        <div class="form-group">
+          <label class="col-sm-12 col center-block text-font">House/ Suite Number/Floor <span class="required">*</span>
+            <input class="form-control" formControlName="houseNumber" [(ngModel)]="IndividualInsurance.houseNumber" [ngClass] = "{'discoverfielderror' : IndividualInsurance.houseNumber.length == 0}" (blur) = "CheckErrorMessage()">
+            <div *ngIf = "IndividualInsurance.houseNumber.length == 0" class="errormessage" >
+                Please Enter your Houser Number
+              </div>
+          </label>
+        </div>
+      </div>
+  
+      <div class="col-sm-12 col">
+        <div class="form-group">
+          <label class="col-sm-12 col center-block text-font">Address Line 1 <span class="required">*</span>
+            <input class="form-control" formControlName="address1" [(ngModel)]="IndividualInsurance.address1" [ngClass] = "{'discoverfielderror' : IndividualInsurance.address1.length == 0}" (blur) = "CheckErrorMessage()">
+            <div *ngIf = "IndividualInsurance.address1.length == 0" class="errormessage" >
+                Please Enter your Address 1
+              </div>
+          </label>
+        </div>
+      </div>
+      <div class="col-sm-12 col">
+        <div class="form-group">
+          <label class="col-sm-12 col center-block  text-font">Address Line 2
+            <input class="form-control" formControlName="address2" [(ngModel)]="IndividualInsurance.address2">
+          </label>
+        </div>
+      </div>
+      <div class="col-sm-6 col">
+        <div class="form-group">
+          <label class="col-sm-12 col center-block text-font">State <span class="required">*</span>
+            <select class="form-control" formControlName="state" [(ngModel)]="IndividualInsurance.state"  [ngClass] = "{'discoverfielderror' : IndividualInsurance.state.length == 0}" (change) = "CheckErrorMessage()" >
+              <option selected [value]="IndividualInsurance.state">{{IndividualInsurance.state}}</option>
+            </select>
+            <div *ngIf = "IndividualInsurance.state.length == 0" class="errormessage" >
+                Please Select Proper State
+            </div>
+          </label>  
+        </div>
+      </div>
+      <div class="col-sm-6 col">
+        <div class="form-group">
+          <label class="col-sm-12 col center-block text-font">City <span class="required">*</span>
+            <select class="form-control" formControlName="city" [(ngModel)]="IndividualInsurance.city" [ngClass] = "{'discoverfielderror' : IndividualInsurance.city.length == 0}" (change) = "CheckErrorMessage()">
+              <option selected [value]="IndividualInsurance.city">{{IndividualInsurance.city}}</option>
+            </select>
+            <div *ngIf = "IndividualInsurance.city.length == 0" class="errormessage" >
+                Please Select Proper State
+            </div>
+          </label>
+  
+        </div>
+      </div>
+      <div class="col-sm-12 col align-right" *ngIf= "blnhomebase">
+        <div class="form-group">
+          <label class="col-sm-12 col center-block text-blue-link">+ ADD ANOTHER LOCATION</label>
+       </div>
+      </div>
+    </form>
+  </div>
+  <app-dashboardfooter [count]=Counter (countChanged)="countChangedHandler($event)"  [orderNo]="orderNo" ></app-dashboardfooter>

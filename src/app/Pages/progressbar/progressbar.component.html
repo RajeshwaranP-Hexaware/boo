@@ -1,0 +1,16 @@
+<div class="progress-title">
+  Progress
+  <span class="percentage">{{percentage}}%</span>
+</div>
+<!-- <div class="progress-block">
+        <div class="progress">
+          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+            40% Complete
+          </div>
+        </div> -->
+<ul class="progressbar">
+  <li [ngClass] = "{'active' : percentage == 0 ||  percentage == 2}" >&nbsp;</li>
+  <li [ngClass] = "{'active' : percentage == 10 ||  percentage == 20 ||  percentage == 30 ||  percentage == 40 || percentage == 50 || percentage == 60}">&nbsp;</li>
+  <li [ngClass] = "{'active' : percentage == 70 || percentage == 85 || percentage == 90  }" >&nbsp;</li>
+  <li>&nbsp;</li>
+</ul>

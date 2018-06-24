@@ -1,0 +1,29 @@
+
+  <div class="tab-content">
+    <div class="tab-icon" [ngClass]="{'setcurrentColor' : pagelink == 1, 'completeinfo' : paglink > 1 }"> <span *ngIf = "pagelink == 1"> 1 </span>  <span *ngIf= "pagelink > 1"> <img src="assets/Images/tickicon.png" /> </span> </div>
+    <div [ngClass]="{'currentcolor' : pagelink == 1}">
+      <div class="tab-title">Discover</div>
+      <div class="tab-subtitle">How to keep your business assets protected</div>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-icon" [ngClass]="{'notstart' : pagelink < 2,  'setcurrentColor' : pagelink == 2, 'completeinfo': pagelink > 2 }"> <span *ngIf = "pagelink  <= 2 "> 2 </span>  <span *ngIf= "pagelink > 2"> <img src="assets/Images/tickicon.png" /> </span> </div>
+    <div [ngClass]="{'currentcolor' : pagelink == 2, 'defaultcolor':  pagelink != 2}">
+      <div class="tab-title">Business Information</div>
+      <div class="tab-subtitle">Confirm product and Operations details</div>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-icon" [ngClass]="{'notstart' : pagelink  == 1,'setcurrentColor' : pagelink == 3,'completeinfo': pagelink > 3 }"> <span *ngIf = "pagelink  <= 3 "> 3 </span>  <span *ngIf= "pagelink > 3"> <img src="assets/Images/tickicon.png" /> </span> </div>
+    <div [ngClass]="{'currentcolor' : pagelink == 3}">
+      <div class="tab-title">Coverage</div>
+      <div class="tab-subtitle">Update loss exposures</div>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-icon" [ngClass]="{'notstart' : pagelink == 1,'completeinfo': pagelink > 3 }"> <span *ngIf = "pagelink  <= 3 "> 4 </span>  <span *ngIf= "pagelink > 3"> <img src="assets/Images/tickicon.png" /> </span> </div>
+    <div [ngClass]="{'currentcolor' : pagelink == 4}">
+      <div class="tab-title">Compare & Buy</div>
+      <div class="tab-subtitle">Compare Premium and Issue Policy</div>
+    </div>
+  </div>

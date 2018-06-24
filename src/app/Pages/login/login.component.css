@@ -1,0 +1,22 @@
+.login-bg
+{
+    background: url('../../../assets/Images/login-bg.jpg') no-repeat top #efefef;
+    background-size:100%;
+    height: 100%;
+    /*padding-top:9em;*/
+}
+.Errormessage
+{
+    color:#ff0000;
+    font-family: 'Roboto', sans-serif;
+    margin-top:5px;
+}
+.marginrememberme
+{
+    margin-top:10px;
+}
+
+.errortxt{
+    border-color: red;
+    margin-bottom:0px !important;
+  }

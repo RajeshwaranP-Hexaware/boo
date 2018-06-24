@@ -1,0 +1,28 @@
+.VisibleChat{
+  visibility: visible;
+}
+
+.HideChat{
+  visibility: hidden;
+} 
+
+.ShowIFrameCheckbox{
+  position: fixed;
+  top:20%;
+  right:60px !important;
+  height:550px !important;
+  width:340px !important;      
+}
+
+
+#closeChat{
+  visibility: hidden !important;
+}
+
+.close-icon-close{
+  visibility: hidden !important;
+} 
+
+#u6font{
+  visibility: hidden !important;
+}

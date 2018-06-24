@@ -1,0 +1,943 @@
+<!-- First Page  Start -->
+<div class="main-content" *ngIf = "orderNo == 1">
+  <div class="container-fluid">
+    <div class="row margin-bottom-10 margin-top-30">
+      <div class="col-6">
+        <p>
+          <label>Business Name:</label> {{IndividualInsurance.businessName}} </p>
+        <label>DBA:</label> {{IndividualInsurance.dba}}
+      </div>
+      <div class="col-6 txtright">
+        <p>
+            <label>Client Name:</label> John Buchanan
+        </p>
+        <label>Client ID:</label> {{ClientId}}</div>
+    </div>
+    <h3>Industry</h3>
+  </div>
+  <div class="container-fluid">
+    <div class="row industry_icons">
+      <div class="col icon-block Manufacture active" [ngClass]="{'SelectedManufacture': IndustryDetails.Manufacture}">
+        <input type="checkbox" [checked] = "IndustryDetails.Manufacture">
+        <div class="textDiv">Manufacture</div>
+      </div>
+      <div class="col realestate icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Real estate </div>
+      </div>
+      <div class="col sports icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Sports</div>
+      </div>
+      <div class="col transportation icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Transportation</div>
+      </div>
+      <div class="col healthcare icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Healthcare</div>
+      </div>
+
+    </div>
+    <div class="row industry_icons">
+      <div class="col food icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Food &amp; accommodation</div>
+      </div>
+      <div class="col consulting icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Consulting</div>
+      </div>
+      <div class="col education icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Education</div>
+      </div>
+      <div class="col finance icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Finance</div>
+      </div>  
+      <div class="col agri icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Agriculture</div>
+      </div>
+      <!-- <div class="col construction">
+          <input type="checkbox">
+        </div> -->
+
+
+    </div>
+    <h3>Profession <span class="required">*</span></h3> 
+    <div class="row industry_icons">
+      <div class="col aerospace icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Aerospace</div>
+      </div>
+      <div class="col automotive icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Automotive</div>
+      </div>
+      <div class="col computers icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Computers</div>
+      </div>
+      <div class="col consumer icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Consumer</div>
+      </div>
+      <div class="col food_beverages icon-block active" [ngClass]="{'Selectedfood_beverages': Profession.foodbeverages}">
+        <input type="checkbox"  [checked] = "Profession.foodbeverages">
+        <div class="textDiv">Food &amp; Beverages</div>
+      </div>
+    </div>
+    <div class="row industry_icons">
+      <div class="col furniture icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Furniture</div>
+      </div>
+      <div class="col health icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Health</div>
+      </div>
+      <div class="col lighting icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Lighting</div>
+      </div>
+      <div class="col mechanical icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Mechanical</div>
+      </div>
+      <div class="col wood_paper icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Wood &amp; Paper</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- First Page  End -->
+
+<!-- Second Page  Start -->
+<div class="main-content" *ngIf = "orderNo == 2">
+  <div class="container-fluid">
+    <div class="row margin-bottom-40 margin-top-30">
+      <div class="col-6">
+      </div>
+      <div class="col-6 txtright">
+          <p>
+              <label>Client Name:</label> John Buchanan
+          </p>
+        <label>Client ID:</label> {{ClientId}}</div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row margin-bottom-20">
+      <div class="col-12 bold">
+        Below are the recommended coverage types based on the client risk profile and business line
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 bold margin-bottom-30">
+        Please select all coverage types that apply <span class="required">*</span>
+      </div>
+    </div>
+
+   <div *ngFor= "let product of updatedAvaialbleProductDetails;let i=index;">
+    <div class="row margin-bottom-50">
+      <div class="col-9 ">
+       {{product.value}}
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name = {{i}} class="onoffswitch1-checkbox" id = {{i}} [checked] = "i == 2">
+          <label class="onoffswitch1-label" for = {{i}}>
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+   </div>
+
+    
+ 
+   
+  
+  </div>
+</div>
+<!-- Second Page  End -->
+
+<!-- Third Page  Start -->
+<div class="main-content"  *ngIf = "orderNo == 3">
+  <div class="container-fluid">
+    <div class="row margin-bottom-10 margin-top-30">
+      <div class="col-6">
+        <div class="form-group business-form">
+          <label for="">Federal Employer ID <span class="required">*</span></label>
+          <input type="text"  placeholder="12-123456789" [value] = "bussinesscompanydetails.federalid" [(ngModel)] = "bussinesscompanydetails.federalid"  [ngClass] = "{'fielderror' : bussinesscompanydetails.federalid.length == 0}" (blur) = "CheckErrorMessage()" >
+          <div *ngIf = "bussinesscompanydetails.federalid.length == 0" class="errormessage" >
+              Please Enter Federal Employer ID
+            </div>
+        </div>
+      </div>
+      <div class="col-6 txtright">
+          <p>
+              <label>Client Name:</label> John Buchanan
+          </p>
+        <label>Client ID:</label> {{ClientId}} </div>
+    </div>
+    <hr>
+    <div class="row margin-bottom-20 margin-top-30">
+      <div class="col-6">
+        <div class="form-group business-form">
+          <label for="">Name of Business</label>
+          <input type="text" placeholder="Cathy Candy Manufactures Inc." [value] = "IndividualInsurance.businessName" disabled>
+        </div>
+      </div>
+      <div class="col-6 ">
+        <div class="form-group business-form">
+          <label for="">DBA</label>
+          <input type="text" placeholder="Cathy CC" [value] = "IndividualInsurance.dba" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-20 margin-top-30">
+      <div class="col-3">
+        <div class="form-group business-form">
+          <label for="">Business start Date  <span class="required">*</span></label>
+          <input type="date" placeholder="06/18/2018" [(ngModel)]="currentdate" class="date" [ngClass] = "{'fielderror' : currentdate.length == 0}" (blur) = "CheckErrorMessage()">
+          <div *ngIf = "currentdate.length == 0" class="errormessage" >
+            Please Selct Bussiness Start Date
+          </div>
+          <!-- <ng-datepicker [options] ="options" [(ngModel)]="bussinesscompanydetails.startdate" ></ng-datepicker> -->
+        </div>
+      </div>
+      <div class="col-3 ">
+        <div class="form-group business-form">
+          <label for="">Years in operation  <span class="required">*</span></label>
+          <input type="text" placeholder="28" maxlength="2" [(ngModel)]  = "Yearsoperation" [ngClass] = "{'fielderror' : Yearsoperation.length == 0}" (blur) = "CheckErrorMessage()" (keypress)="_keyPress($event)">
+          <div *ngIf = "Yearsoperation.length == 0" class="errormessage" >
+            Please Enter Years in operation
+          </div>
+        </div>
+      </div>
+      <div class="col-6 ">
+        <div class="form-group business-form">
+          <label for="">Registration type <span class="required">*</span></label>
+           <select class="form-control" [(ngModel)]="bussinesscompanydetails.registrationtype" (blur) = "CheckErrorMessage()" [ngClass] = "{'fielderror' : bussinesscompanydetails.registrationtype.length == 0}">
+              <option selected [value]="bussinesscompanydetails.registrationtype">{{bussinesscompanydetails.registrationtype}}</option>
+            </select>
+            <div *ngIf = "bussinesscompanydetails.registrationtype.length == 0" class="errormessage" >
+              Please Enter your Bussines Name
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-20 margin-top-30">
+      <div class="col-6">
+        <div class="form-group business-form">
+          <h4>Employees</h4>
+          <label class="light">How many people work for your business?
+(total staff, including yourself, owners, officers,
+employees, and contractors)<span class="required">*</span></label>
+          <input type="text" placeholder="15" [value] = "bussinesscompanydetails.employeenum" [(ngModel)]="bussinesscompanydetails.employeenum" [ngClass] = "{'fielderror' : bussinesscompanydetails.employeenum.length == 0}" (blur) = "CheckErrorMessage()">
+          <div *ngIf = "bussinesscompanydetails.employeenum.length == 0" class="errormessage" >
+            Please Enter your Bussines Information
+          </div>
+        </div>
+      </div>
+      <div class="col-6 ">
+        <div class="form-group business-form">
+          <h4>&nbsp;</h4>
+          <label class="light">Of these 15 people, how many are owners or officers? (Assume 15% of employees are Owners and Default
+the Value)</label>
+          <input type="text" placeholder="">
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-20 margin-top-30">
+      <div class="col-10">
+          <label for="">Does any of your business involve subcontracting work to others?</label> 
+      </div>
+      <div class="col-2">
+         <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitchbussinessinvovle" class="onoffswitch1-checkbox" id="onoffswitchbussinessinvovle" checked>
+          <label class="onoffswitch1-label" for="onoffswitchbussinessinvovle">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <h4 class="margin-top-30">Vehicles</h4>
+    <div class="row margin-bottom-20">
+      <div class="col-3">
+        <div class="form-group business-form">
+          <label class="light">No of Vehicles to insure</label>
+          <input type="text" placeholder="3">
+        </div>
+      </div>
+      <div class="col-6 ">
+        <div class="form-group business-form">
+          <label class="light">Date  you would like your coverage to start?  <span class="required">*</span></label>
+          <input type="date" placeholder="06/18/2018"  [(ngModel)]="currentdate" [ngClass] = "{'fielderror' : currentdate.length == 0}" class="date" (change) = "CheckErrorMessage()">
+          <div *ngIf = "currentdate.length == 0" class="errormessage" >
+            Please Select coverage to start Date
+          </div>
+
+          <!-- <ng-datepicker [options] ="options" [(ngModel)]="currentdate" ></ng-datepicker>                                          -->
+        </div>
+      </div>
+      <div class="col-3"></div>
+    </div>
+    <h4>Financial Information</h4>
+    <div class="row margin-bottom-20 margin-top-30">
+      <div class="col-3">
+        <div class="form-group business-form">
+          <label class="light">What will your revenue be for the next fiscal year? (projected)</label>
+          <input type="text" placeholder="$200,000" >
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-group business-form">          
+          <label class="light" >What is your revenue for the current fiscal year? (current revenue)  <span class="required">*</span></label>
+          <input type="text" placeholder="$190,000" [value] = "revenuecurrency" [(ngModel)] = "revenuecurrency" [ngClass] = "{'fielderror' : revenuecurrency.length == 0}" (blur) = "CheckErrorMessage()" >
+          <div *ngIf = "revenuecurrency.length == 0" class="errormessage" >
+            Please Enter revenue for current fiscal year
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+         <div class="form-group business-form">
+          <label class="light">What was your revenue in the prior fiscal year? (prior revenue)</label>
+          <input type="text" placeholder="$180,000" [value] = "previouscurrency" >
+        </div>
+      </div>
+      <div class="col-3">
+         <div class="form-group business-form">
+          <label class="light">What percentage of your sales are generated over the Internet?</label>
+          <input type="text" placeholder="30%">
+        </div>
+      </div>
+    </div>
+       <div class="row margin-bottom-20 margin-top-30">
+      <div class="col-6">
+        <div class="form-group business-form">
+          <h4>Annual Payroll</h4>
+          <label class="light">What is the total annual payroll for your entire office?</label>
+          <input type="text" placeholder="$67000" class="width200">
+        </div>
+      </div>
+      <div class="col-6"></div>
+    </div>
+  </div>
+</div>
+<!-- Third Page  End -->
+
+<!-- Fourth Page  Start -->
+<div class="main-content" *ngIf="orderNo == 4">
+  <div class="container-fluid">
+    <div class="row margin-bottom-10 margin-top-30">
+      <div class="col-8 col- business-name">
+        <label for="">Search or select the risk class(es) applicable for your Industry below</label>
+        <input type="text" placeholder="Search by Risk Class">
+      </div>
+      <div class="col-4 txtright">
+          <p>
+              <label>Client Name:</label> John Buchanan
+          </p>
+        <label>Client ID:</label> {{ClientId}} <br>
+        <p class="badge margin-top-10 txtright">1 selected</p>
+      </div>
+    </div>
+    <div class="row industry_icons">
+      <div class="col bakeryproducts icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Bakery Products</div>
+      </div>
+      <div class="col candy_confectionery icon-block">
+        <input type="checkbox" checked>
+        <div class="textDiv">Candy & Confectionery</div>
+      </div>
+      <div class="col cannedspecialties icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Canned Specialties </div>
+      </div>
+      <div class="col cheesemanufacturing icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Cheese Manufacturing</div>
+      </div>
+      <div class="col chocolate_cocoa icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Chocolate & Cocoa</div>
+      </div>
+    </div>
+    <div class="row industry_icons">
+      <div class="col coffeeroastedmanufacturing icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Coffee Roasted Manufacturing</div>
+      </div>
+      <!-- <div class="col candy_confectionery icon-block">
+        <input type="checkbox"><div class="textDiv">Transportation</div>
+      </div> -->
+      <div class="col creamerybutter icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Creamery Butter</div>
+      </div>
+      <div class="col dairyproducts icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Dairy Products </div>
+      </div>
+      <div class="col dried_dehydratedfruits icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Dried & Dehydrated Fruits</div>
+      </div>
+      <div class="col flavoringsyrups_extracts icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Flavored Extracts & Syrups</div>
+      </div>
+    </div>
+    <div class="row industry_icons">
+      <div class="col foodproducts icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Food Products Dry</div>
+      </div>
+      <div class="col foodproductswithfry icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Food Products with Fry</div>
+      </div>
+      <div class="col fruit_vegetablepapercontainers icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Fruit &amp; Vegetable Paper </div>
+      </div>
+      <div class="col fruitdrinks_carbonated_glass icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Fruit Drinks, Carbonated-Glass</div>
+      </div>
+      <div class="col fruitdrinksplasticcontainers icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Fruit Drinks - Plastic Containers</div>
+      </div>
+    </div>
+    <div class="row industry_icons">
+      <div class="col fruitorvegetablejuice icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Fruit or Vegetable Juice</div>
+      </div>
+      <div class="col fruits_vegetables_jams_jellies icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Fruits, Vegetables, Jams & Jellies</div>
+      </div>
+      <div class="col fruits_vegetables_pickledetc icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Fruits,Vegetables Pickled, etc...</div>
+      </div>
+      <div class="col fruits_vegetablesfrozen icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Fruits & Vegetables - Frozen</div>
+      </div>
+      <div class="col icecream_frozendesserts icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Ice Cream & Frozen Desserts</div>
+      </div>
+    </div>
+    <div class="row industry_icons">
+      <div class="col macaroni_cappellinietc icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Macaroni & Cappellini, etc..</div>
+      </div>
+      <div class="col maltbeverage_microbreweries icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Micro Breweries Malt Beverage</div>
+      </div>
+      <div class="col meatpreparedfrozen icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Meat Prepared Frozen </div>
+      </div>
+      <div class="col meatpreparedpackaging icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Meat Prepared Packaging</div>
+      </div>
+      <div class="col milkmanufacturingdry icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Milk Manufacturing Dry</div>
+      </div>
+    </div>
+    <div class="row industry_icons">
+
+      <div class="col milkmanufacturingfluid icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Milk Manufacturing Fluid</div>
+      </div>
+      <div class="col nuts_seeds icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Nuts & Seeds</div>
+      </div>
+      <div class="col other icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Other</div>
+      </div>
+      <div class="col preparedmeals_desserts icon-block">
+        <input type="checkbox">
+        <div class="textDiv">Prepared Meals & Desserts</div>
+      </div>
+      <div class="col ">
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fourth Page  End -->
+
+<!-- Fifth Page  Start -->
+<div class="main-content" *ngIf = "orderNo == 5">
+  <div class="container-fluid">
+    <div class="row margin-bottom-40 margin-top-30">
+      <div class="col-12 txtright">
+          <p>
+              <label>Client Name:</label> John Buchanan
+          </p>
+        <label>Client ID:</label> {{clientId}}</div>
+    </div>
+    <div class="row margin-bottom-20">
+      <div class="col-12 txtright"><button class="add_icon">Add Another Product</button></div>
+    </div>
+    <div class="row margin-bottom-20">
+      <div class="col-6 col-">
+         <div class="form-group">
+          <label>Product Description</label> <br>
+          <input type="text" placeholder="">
+        </div>
+      </div>
+      <div class="col-6 col-">
+         <div class="form-group">
+          <label>Intended Use</label> <br>
+          <input type="text" placeholder="">
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-20">
+      <div class="col-12 col-">
+        <div class="form-group">
+          <label>Describe the extent and type of product design performed</label>
+          <br>
+          <input type="text" placeholder="">
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-20">
+      <div class="col-12 col-">
+        <button class="save">Save Product</button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row margin-bottom-20">
+      <div class="col-12 bold">
+        Food Product Manufacturing
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9 ">
+        Dietary supplement manufacturing <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Milk, juice, or dairy products manufacturing <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch2" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Meat or poultry processing <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch3" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-20">
+      <div class="col-12 bold">
+        Recalled Products
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9 col-">
+        Do you have a recall process in place?
+      </div>
+      <div class="col-3 col-">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch4" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Have you had any products recalled or discontinued? <span class="required">*</span>
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch5" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-20">
+      <div class="col-12 bold">
+        Quality
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Quality control plan
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch6" class="onoffswitch1-checkbox" id="myonoffswitch1" checked>
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Sell by date on products
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch6" class="onoffswitch1-checkbox" id="myonoffswitch1" checked>
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Serial number or batch number for tracking
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch6" class="onoffswitch1-checkbox" id="myonoffswitch1" checked>
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">
+        Complaint investigation
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch6" class="onoffswitch1-checkbox" id="myonoffswitch1" checked>
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-50">
+      <div class="col-9">None of the above
+      </div>
+      <div class="col-3">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch6" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+          <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fifth Page  End -->
+
+<!-- Six Page  Start -->
+
+<div class="main-content" *ngIf = "orderNo == 6">
+  <div class="container-fluid">
+  <div class="row margin-bottom-10 margin-top-30">
+    <div class="col-12 txtright">
+        <p>
+            <label>Client Name:</label> John Buchanan
+        </p>
+      <label>Client ID:</label> {{ClientId}}
+    </div>
+  </div>
+  <div class="row margin-bottom-10 margin-top-30">
+    <div class="col-12 bold">Which of the following cooking equipment do you use?
+    </div>
+  </div>
+  <div class="row margin-bottom-10 margin-top-30">
+    <div class="col-12 col-">Cooking equipment </div>
+  </div>
+
+  <div class="row industry_icons">
+    <div class="col cookers icon-block active"  [ngClass]="{'selectcookers': blncookers}">
+      <input type="checkbox" checked><div class="textDiv">Cookers</div>
+    </div>
+    <div class="col dryers icon-block">
+      <input type="checkbox"><div class="textDiv">Fryers</div>
+    </div>
+    <div class="col evaporators icon-block">
+      <input type="checkbox"><div class="textDiv">Evaporators</div>
+    </div>
+    <div class="col fryers icon-block">
+      <input type="checkbox"><div class="textDiv">Dryers</div>
+    </div>
+    <div class="col grills icon-block">
+      <input type="checkbox"><div class="textDiv">Grills</div>
+    </div>
+  </div>
+  <div class="row industry_icons">
+    <div class="col ovens icon-block">
+      <input type="checkbox"><div class="textDiv">Ovens</div>
+    </div>
+    <div class="col steamers icon-block">
+      <input type="checkbox"><div class="textDiv">Steamers</div>
+    </div>
+    <div class="col">
+
+    </div>
+    <div class="col ">
+
+    </div>
+    <div class="col ">
+
+    </div>
+  </div>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+      Is all cooking and frying equipment UL (electric) or AGA (gas) certified and labeled?
+      <span class="required">*</span>
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" checked>
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <h3>Fire Protection</h3>
+  <p class="small">Please indicate which of the following fire protection devices are in place. (Select all that apply)</p>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+      Automatic fixed extinguishing system covering all cooking equipment
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" checked>
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+      Automatic fuel shutoffs
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+      High limit temperature controls
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+      Exhaust hood and grease extraction filters
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+      Dry chemical fire extinguishers in cooking areas
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+      None of the above
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <h3>Bulk Storage / Silos</h3>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+      Do you utilize dry bulk storage containers/bins or silos for storage of flour, cornstarch, rice, grains, sugar or other powdered
+      products?
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <h3>Ingredients Labels</h3>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+     Are all of your food products clearly labeled as to their ingredients?
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" checked>
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <h3>Health and Sanitation</h3>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+    Have you had any federal or state health inspection violations relating to sanitation, refrigeration or contamination? 
+    <span class="required">*</span>
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+   <h3>Prevention / Treatment</h3>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">
+    Have you ever manufactured food designed to provide prevention or treatment of illness or disease?
+    <span class="required">*</span>
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <h3>Dietary Supplements</h3>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">Does your business sell dietary supplements?
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <h3>Hazardous Materials</h3>
+  <div class="row margin-bottom-50">
+    <div class="col-9 ">Do you have any materials considered to be hazardous waste, i.e. chemicals, pollutants in your operations ? 
+      <span class="required">*</span>
+    </div>
+    <div class="col-3">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" >
+        <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Six Page  End -->
+
+<app-bussinessfooter></app-bussinessfooter>

@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-12 col-12 titleContainer">
+      INSURANCE <span class="insruanceFirst"> FIRST </span>
+    </div>
+</div>    
+</div>
+<div class="container-fluid h-100 d-flex flex-column">
+  <div class="row h-100">
+    <div class="col-sm-8 col backdrops backdropContainer_1"></div>
+    <div class="col-sm-4 col backdrops backdropContainer_2" id="backdropContainer_2">
+      <app-chat-bot></app-chat-bot>
+    </div>
+    </div>
+  <div class="row parentContainer">
+    <div class="col-sm-12 col mainContainer">
+      <div class="row popupContainer" id="popupContainer">
+        <div class="col-sm-9 col contentContainer">
+          <div class="row contentHeader">
+            <div class="col-sm-8 col ">
+              <app-leftsidepageheader></app-leftsidepageheader>
+            </div>
+            <div class="col-sm-4 col custom-progress-bar">
+              <app-progressbar></app-progressbar>
+            </div>
+          </div>
+          <router-outlet></router-outlet>
+        </div>
+        <div class="col-sm-3 col tabsContainer">
+        <app-pagelink></app-pagelink>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

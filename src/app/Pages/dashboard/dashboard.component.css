@@ -1,0 +1,171 @@
+/* You can add global styles to this file, and also import other style files */
+.parentContainer {
+    /* position: relative; */
+  }
+  
+  .container-fluid .row .titleContainer {
+    padding: 25px 0px 25px 30px;
+    font: bold 1.6em 'Roboto', serif;
+    color: #0097D6;
+    background: #fff;
+  }
+  
+  .backdrops {
+     /* max-height: 1200px; 
+    min-height:100vh; */
+  }
+  
+  .backdropContainer_1 {
+    background-color: #efefef;
+  }
+  
+  .backdropContainer_2 {
+    background-color: #003768;
+  }
+  
+  .mainContainer {
+    position: absolute;
+    width: 1300px;
+    top:110px;
+    left:30px;
+  }
+  
+  .contentContainer {
+    width: 900px;
+    background-color: #fff;
+    /* height: 1099px !important; */
+    padding: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left:0px !important;
+  }
+  
+  .popupContainer {
+    position: relative;
+  }
+  
+  .contentHeader {
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+  .contentFooter {
+    min-height: 110px;
+    background-color: #fcfcfc;
+    margin: 0px;
+    position: absolute;
+    /* bottom: 0px; */
+    border-top: 1px solid #e5e5e5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    font:16px 'Roboto', sans-serif ;
+    padding-top: 30px;
+  }
+  
+  .contentTitle {
+    font: bold 1.5em 'Roboto', sans-serif;
+    margin: 20px 0 10px 15px;
+    color: #4D4C4C;
+    font-weight: 500;
+  }
+  
+  .contentSubtitle {
+    font: normal 16px 'Roboto', serif;
+    margin: 0 0 25px 15px;
+    color: #aab0b2;
+  }
+  
+  .cancel-button {
+    color: #0097D6
+  }
+  .cancel-button:hover{
+    text-decoration:none !important;
+  }
+  .save-next-button {
+    height: 50px;
+    background-color: #0097D6;
+    font-size:16px;
+    padding:10px 30px;
+    margin-right:10px;
+  }
+  
+  .step-ball {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #aab0b2;
+    border-radius: 15px;
+    background-color: #fff;
+    /* margin-right: 10px; */
+  }
+  
+  .step-ball:nth-child(1) {
+    border: 1px solid #0097D6;
+    background-color: #0097D6;
+  }
+  
+  .custom-progress-bar {
+    border-left: 1px solid #e5e5e5;
+  }
+  
+  .progress-block {
+    margin: 30px;
+  }
+  
+  .zip-verify-section {
+    width: 40%;
+    margin: 184px auto;
+  }
+  
+  .input-group-append {margin-left: 10px;}
+  
+  .client-id {
+    font: bold 16px 'Roboto', serif;
+    color: #7f7e7e;
+  }
+  
+  .text-font {
+    font: bold 16px 'Roboto', serif;
+    color: #7f7e7e;
+    margin: 0;
+  }
+  
+  
+  .contentSection {
+    margin: 30px;
+  }
+  .text-blue-link{
+    font: bold 16px 'Roboto', serif;
+    color: #0097d6;
+    margin: 0px 0 40px 0;
+  }
+  .align-right {
+      text-align: right;
+  }
+  
+  .text-bold{
+    font: bold 18px 'Roboto', serif;
+    color: #4d4c4c;
+    margin: 40px 0 40px 0;
+  }
+  .form-group{
+      margin-bottom:0px;
+  }
+  input,select, button{
+      margin:20px 0 40px 0;
+      height:50px ;
+  }
+  .submit-button{
+      margin-top:20px;
+  }
+
+  .insruanceFirst{
+    font:1em 'Roboto', serif !important;
+  }
+  .bg
+  {
+     display: -webkit-flex; /* Safari */
+    display: flex;
+  }

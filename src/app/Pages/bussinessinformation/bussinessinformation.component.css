@@ -1,0 +1,1836 @@
+.contentHeader {
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .contentTitle {
+   font: bold 1.5em 'Roboto', sans-serif;
+    margin: 20px 0 10px 15px;
+    color: #4D4C4C;
+    font-weight: 500;
+  }
+
+  .contentSubtitle {
+    font: normal 16px 'Roboto', sans-serif;
+    margin: 0 0 25px 15px;
+    color: #aab0b2;
+  }
+.padding-left-30
+{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.Manufacture{
+
+  background:url('../../../assets/Images/industry/manufacturing.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+
+}
+
+
+
+.Manufacture:hover,.SelectedManufacture,.Manufacture.active
+{
+  background:url('../../../assets/Images/industry/manufacturing_hover.svg') center no-repeat #0097d6 !important;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px !important;
+}
+
+.agri
+{
+  background:url('../../../assets/Images/industry/agriculture.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.agri:hover
+{
+  background:url('../../../assets/Images/industry/agriculture_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.construction
+{
+  background:url('../../../assets/Images/industry/construction.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.construction:hover
+{
+  background:url('../../../assets/Images/industry/construction_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.consulting
+{
+  background:url('../../../assets/Images/industry/consulting.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.consulting:hover
+{
+  background:url('../../../assets/Images/industry/consulting_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.education
+{
+  background:url('../../../assets/Images/industry/education.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.education:hover
+{
+  background:url('../../../assets/Images/industry/education_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.finance
+{
+  background:url('../../../assets/Images/industry/finance.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.finance:hover
+{
+
+  background:url('../../../assets/Images/industry/finance_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.food
+{
+  background:url('../../../assets/Images/industry/food_accommodation.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.food:hover
+{
+
+  background:url('../../../assets/Images/industry/food_accommodation_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.healthcare
+{
+  background:url('../../../assets/Images/industry/healthcare.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.healthcare:hover
+{
+  background:url('../../../assets/Images/industry/healthcare_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.realestate
+{
+  background:url('../../../assets/Images/industry/real_estate.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.realestate:hover
+{
+  background:url('../../../assets/Images/industry/real_estate_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.sports
+{
+  background:url('../../../assets/Images/industry/sports.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.sports:hover
+{
+  background:url('../../../assets/Images/industry/sports_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.transportation
+{
+  background:url('../../../assets/Images/industry/transportation.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.transportation:hover
+{
+  background:url('../../../assets/Images/industry/transportation_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.aerospace
+{
+  background:url('../../../assets/Images/profession/aerospace.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.aerospace:hover
+{
+  background:url('../../../assets/Images/profession/aerospace_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.automotive
+{
+  background:url('../../../assets/Images/profession/automotive.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.automotive:hover
+{
+  background:url('../../../assets/Images/profession/automotive_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.computers
+{
+  background:url('../../../assets/Images/profession/computers.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.computers:hover
+{
+  background:url('../../../assets/Images/profession/computers_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.consumer
+{
+  background:url('../../../assets/Images/profession/consumer.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.consumer:hover
+{
+  background:url('../../../assets/Images/profession/consumer_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.food_beverages
+{
+  background:url('../../../assets/Images/profession/food_beverages.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.food_beverages:hover, .Selectedfood_beverages,.food_beverages.active
+{
+  background:url('../../../assets/Images/profession/food_beverages_hover.svg') center no-repeat #0097d6 !important;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px !important;
+}
+.furniture
+{
+  background:url('../../../assets/Images/profession/furniture.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.furniture:hover
+{
+  background:url('../../../assets/Images/profession/furniture_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.health
+{
+  background:url('../../../assets/Images/profession/health.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.health:hover
+{
+  background:url('../../../assets/Images/profession/health_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.lighting
+{
+  background:url('../../../assets/Images/profession/lighting.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.lighting:hover
+{
+  background:url('../../../assets/Images/profession/lighting_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.mechanical
+{
+  background:url('../../../assets/Images/profession/mechanical.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.mechanical:hover
+{
+  background:url('../../../assets/Images/profession/mechanical_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.wood_paper
+{
+  background:url('../../../assets/Images/profession/wood_paper.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.wood_paper:hover
+{
+  background:url('../../../assets/Images/profession/wood_paper_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.industry_icons label
+{
+  color:#0097d6;
+  font-size:16px;
+  text-align: center;
+  bottom: 5%;
+  position: absolute;
+   left: 30%;
+   font-weight: 400;
+   font-family:'Roboto';
+}
+.agri label:hover
+{
+  color:#fff;
+  font-size:16px;
+  text-align: center;
+  margin:110px 50px;
+}
+.industry_icons .col
+{
+    margin:5px;
+}
+.txtright
+{
+    text-align: right;
+}
+.main-content
+{
+    margin:10px 30px 10px 15px; 
+    font:normal 16px 'Roboto', sans-serif;
+    color:#7f7e7e;
+    font-weight: 300;
+    /* height: 110vh;
+    min-height: 110vh;
+    max-height:130vh;
+    overflow-y: auto; */
+    
+}
+.main-content label{
+    color:#4D4C4C;
+    font-size:16px;
+    font-weight: 500;
+}
+.main-content h3{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color:#000;
+    font-family:'Roboto', sans-serif;
+    font-size:18px;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+  background-color: #efefef;
+  background-clip: content-box;   
+   border: 4px solid transparent;
+   height: 5px;
+}
+::-webkit-scrollbar
+{
+  width: 3px;
+  height:100px;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background-color: #aab0b2;
+  height: 5px;
+}
+.industry_icons
+{
+  padding-left:10px;
+}
+.margin-bottom-10
+{
+    margin-bottom: 10px;
+}
+.margin-top-30
+{
+    margin-top:30px;
+}
+.industry_icons input[type="checkbox"]
+{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  visibility: hidden;
+  margin-top:10px;
+  float:right;
+}
+.industry_icons input[type=checkbox]:after {
+  content: " ";
+  background-color: #fff;
+  display: inline-block;
+  /* margin-left: 10px; */
+  padding-bottom: 5px;
+  color: #00BFF0;
+  width: 20px;
+  height: 20px;
+  visibility: visible;
+  border: 1px solid #00BFF0;
+  padding-left: 3px; 
+  border-radius: 3px;
+}
+.industry_icons input[type=checkbox]:checked:after {
+  content: "\2714";
+  padding: -5px;
+  font-weight: bold;
+  font-size:12px;
+  color: #fff;
+  border: 1px solid #0097d6;
+  background:#0097d6;
+}
+
+.required
+{
+    color:#ff0000;
+}
+
+.onoffswitch {
+  position: relative; width: 75px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch1-checkbox {
+  display: none;
+}
+
+.onoffswitch1-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 1px solid #999999; border-radius: 30px;
+}
+
+.onoffswitch1-inner {
+  display: block; width: 200%; margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch1-inner:before, .onoffswitch1-inner:after {
+  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+  font-size: 14px; color: white; font-family: 'Roboto', sans-serif; font-weight: bold;
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  border-radius: 30px;
+  
+}
+
+.onoffswitch1-inner:before {
+  content: "YES";
+  padding-left: 10px;
+  background-color: #0097d6; color: #FFFFFF;
+  border-radius: 30px 0 0 30px;
+}
+
+.onoffswitch1-inner:after {
+  content: "NO";
+  padding-right: 10px;
+  background-color: #fff; color: #999999;
+  text-align: right;
+  border-radius: 0 30px 30px 0;
+}
+
+.onoffswitch1-switch {
+  display: block; width: 30px; margin: 0px;
+  background: #FFFFFF;
+  border: 1px solid #999999; border-radius: 30px;
+  position: absolute; top: 0; bottom: 0;
+  -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+  /* background-image: -moz-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+  background-image: -webkit-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+  background-image: -o-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+  background-image: linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+  box-shadow: 0 1px 1px white inset;*/
+}
+
+.onoffswitch1-checkbox:checked + .onoffswitch1-label .onoffswitch1-inner {
+  margin-left: 0;
+}
+
+.onoffswitch1-checkbox:checked + .onoffswitch1-label .onoffswitch1-switch {
+  right: 0px; 
+}
+
+.padding-left-30
+{
+    padding-left:30px;
+    padding-right:30px;
+}
+.margin-bottom-10
+{
+    margin-bottom: 10px;
+}
+.margin-top-30
+{
+    margin-top:30px;
+}
+.txtright
+{
+    text-align: right;
+}
+  .bold
+  {
+    font-weight: 700;
+    color:#333;
+  }
+  .margin-bottom-50
+  {
+    margin-bottom: 50px;
+  }
+  .margin-bottom-30
+  {
+    margin-bottom:30px;
+  }
+  .margin-bottom-40
+  {
+    margin-bottom: 40px;
+  }
+  .margin-bottom-20
+  {
+    margin-bottom: 20px;
+  }
+.padding-left-30
+{
+    padding-left:30px;
+    padding-right:30px;
+}
+.bold
+  {
+    font-weight: 700;
+    color:#333;
+  }
+.margin-top-30
+  {
+    margin-top: 30px;
+  }
+  .margin-bottom-50
+  {
+    margin-bottom: 50px;
+  }
+  .margin-bottom-30
+  {
+    margin-bottom:30px;
+  }
+  .margin-bottom-40
+  {
+    margin-bottom: 40px;
+  }
+  .margin-bottom-20
+  {
+    margin-bottom: 20px;
+  }
+.padding-left-30
+{
+    padding-left:30px;
+    padding-right:30px;
+}
+.txtright
+{
+    text-align: right;
+}
+.required
+{
+    color:#ff0000;
+}
+.light
+{
+    font-weight: 400 !important;
+}
+/* .business-form input[type='text'],.business-form input[type='number'],select
+{
+    text-indent: 10px;
+    width:100%;
+    height:50px !important;
+    border:1px solid #ced4da !important;
+    font-size: 1em;
+} */
+.business-form label{
+    display:block;
+}
+
+
+.date
+{
+    background:url('../../../assets/Images/calendar.svg') no-repeat right;
+    background-position: right 10px top 10px;
+    background-size:25px;
+    width:200px !important;
+}
+
+.width200
+{
+    width:200px !important;
+}
+.industry_icons input[type="checkbox"]
+{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  visibility: hidden;
+  margin-top:10px;
+  float:right;
+  z-index: 9;
+    position: absolute;
+    right: 0px;
+}
+.industry_icons input[type=checkbox]:after {
+  content: " ";
+  background-color: #fff;
+  display: inline-block;
+  /* margin-left: 10px; */
+  padding-bottom: 5px;
+  color: #00BFF0;
+  width: 20px;
+  height: 20px;
+  visibility: visible;
+  border: 1px solid #00BFF0;
+  padding-left: 3px; 
+  border-radius: 3px;
+}
+.industry_icons input[type=checkbox]:checked:after {
+  content: "\2714";
+  padding: -5px;
+  font-weight: bold;
+  font-size:12px;
+  color: #fff;
+  border: 1px solid #0097d6;
+  background:#0097d6;
+}
+.icon-block
+{
+  position: relative;
+  color: #0097d6;
+}
+.icon-block:hover,.icon-block.active{
+  color:#fff;
+}
+.textDiv
+{
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    left: 0px;
+    display: block;
+    /* border: 1px solid; */
+    height: 150px;
+    padding-top: 110px;
+}
+.icon-block:hover > .textDiv{
+  color:#fff;
+}
+.padding-left-30
+{
+    padding-left:30px;
+    padding-right:30px;
+}
+.bold
+  {
+    font-weight: 700;
+    color:#333;
+  }
+.margin-top-30
+  {
+    margin-top: 30px;
+  }
+  .margin-bottom-50
+  {
+    margin-bottom: 50px;
+  }
+  .margin-bottom-30
+  {
+    margin-bottom:30px;
+  }
+  .margin-bottom-40
+  {
+    margin-bottom: 40px;
+  }
+  .margin-bottom-20
+  {
+    margin-bottom: 20px;
+  }
+.padding-left-30
+{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.txtright
+{
+    text-align: right;
+}
+.required
+{
+    color:#ff0000;
+}
+.bakeryproducts
+{
+  background:url('../../../assets/Images/manufacturing/bakeryproducts.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.bakeryproducts:hover
+{
+  background:url('../../../assets/Images/manufacturing/bakeryproducts_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.candy_confectionery
+{
+  background:url('../../../assets/Images/manufacturing/candy_confectionery.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.candy_confectionery:hover
+{
+  background:url('../../../assets/Images/manufacturing/candy_confectionery_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.cannedspecialties
+{
+  background:url('../../../assets/Images/manufacturing/cannedspecialties.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.cannedspecialties:hover
+{
+  background:url('../../../assets/Images/manufacturing/cannedspecialties_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.cheesemanufacturing
+{
+  background:url('../../../assets/Images/manufacturing/cheesemanufacturing.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.cheesemanufacturing:hover
+{
+  background:url('../../../assets/Images/manufacturing/cheesemanufacturing_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.chocolate_cocoa
+{
+  background:url('../../../assets/Images/manufacturing/chocolate_cocoa.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.chocolate_cocoa:hover
+{
+  background:url('../../../assets/Images/manufacturing/chocolate_cocoa_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.coffeeroastedmanufacturing
+{
+  background:url('../../../assets/Images/manufacturing/coffeeroastedmanufacturing.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.coffeeroastedmanufacturing:hover
+{
+  background:url('../../../assets/Images/manufacturing/coffeeroastedmanufacturing_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.candy_confectionery
+{
+  background:url('../../../assets/Images/manufacturing/candy_confectionery.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.candy_confectionery:hover
+{
+  background:url('../../../assets/Images/manufacturing/candy_confectionery_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.creamerybutter
+{
+  background:url('../../../assets/Images/manufacturing/creamerybutter.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.creamerybutter:hover
+{
+  background:url('../../../assets/Images/manufacturing/creamerybutter_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.dairyproducts
+{
+  background:url('../../../assets/Images/manufacturing/dairyproducts.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.dairyproducts:hover
+{
+  background:url('../../../assets/Images/manufacturing/dairyproducts_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.dried_dehydratedfruits
+{
+  background:url('../../../assets/Images/manufacturing/dried_dehydratedfruits.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.dried_dehydratedfruits:hover
+{
+  background:url('../../../assets/Images/manufacturing/dried_dehydratedfruits_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.flavoringsyrups_extracts
+{
+  background:url('../../../assets/Images/manufacturing/flavoringsyrups_extracts.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.flavoringsyrups_extracts:hover
+{
+  background:url('../../../assets/Images/manufacturing/flavoringsyrups_extracts_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.foodproducts
+{
+  background:url('../../../assets/Images/manufacturing/foodproducts.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.foodproducts:hover
+{
+  background:url('../../../assets/Images/manufacturing/foodproducts_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.foodproductswithfry
+{
+  background:url('../../../assets/Images/manufacturing/foodproductswithfry.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.foodproductswithfry:hover
+{
+  background:url('../../../assets/Images/manufacturing/foodproductswithfry_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruit_vegetablepapercontainers
+{
+  background:url('../../../assets/Images/manufacturing/fruit_vegetablepapercontainers.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruit_vegetablepapercontainers:hover
+{
+  background:url('../../../assets/Images/manufacturing/fruit_vegetablepapercontainers_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruitdrinks_carbonated_glass
+{
+  background:url('../../../assets/Images/manufacturing/fruitdrinks_carbonated_glass.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruitdrinks_carbonated_glass:hover
+{
+  background:url('../../../assets/Images/manufacturing/fruitdrinks_carbonated_glass_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruitdrinksplasticcontainers
+{
+  background:url('../../../assets/Images/manufacturing/fruitdrinksplasticcontainers.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruitdrinksplasticcontainers:hover
+{
+  background:url('../../../assets/Images/manufacturing/fruitdrinksplasticcontainers_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.flavoringsyrups_extracts
+{
+  background:url('../../../assets/Images/manufacturing/flavoringsyrups_extracts.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.flavoringsyrups_extracts:hover
+{
+  background:url('../../../assets/Images/manufacturing/flavoringsyrups_extracts_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruitorvegetablejuice
+{
+  background:url('../../../assets/Images/manufacturing/fruitorvegetablejuice.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruitorvegetablejuice:hover
+{
+  background:url('../../../assets/Images/manufacturing/fruitorvegetablejuice_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruits_vegetables_jams_jellies
+{
+  background:url('../../../assets/Images/manufacturing/fruits_vegetables_jams_jellies.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruits_vegetables_jams_jellies:hover
+{
+  background:url('../../../assets/Images/manufacturing/fruits_vegetables_jams_jellies_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruits_vegetables_pickledetc
+{
+  background:url('../../../assets/Images/manufacturing/fruits_vegetables_pickledetc.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruits_vegetables_pickledetc:hover
+{
+  background:url('../../../assets/Images/manufacturing/fruits_vegetables_pickledetc_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruits_vegetablesfrozen
+{
+  background:url('../../../assets/Images/manufacturing/fruits_vegetablesfrozen.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fruits_vegetablesfrozen:hover
+{
+  background:url('../../../assets/Images/manufacturing/fruits_vegetablesfrozen_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.icecream_frozendesserts
+{
+  background:url('../../../assets/Images/manufacturing/icecream_frozendesserts.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.icecream_frozendesserts:hover
+{
+  background:url('../../../assets/Images/manufacturing/icecream_frozendesserts_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.macaroni_cappellinietc
+{
+  background:url('../../../assets/Images/manufacturing/macaroni_cappellinietc.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.macaroni_cappellinietc:hover
+{
+  background:url('../../../assets/Images/manufacturing/macaroni_cappellinietc_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.maltbeverage_microbreweries
+{
+  background:url('../../../assets/Images/manufacturing/maltbeverage_microbreweries.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.maltbeverage_microbreweries:hover
+{
+  background:url('../../../assets/Images/manufacturing/maltbeverage_microbreweries_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.meatpreparedfrozen
+{
+  background:url('../../../assets/Images/manufacturing/meatpreparedfrozen.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.meatpreparedfrozen:hover
+{
+  background:url('../../../assets/Images/manufacturing/meatpreparedfrozen_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.meatpreparedpackaging
+{
+  background:url('../../../assets/Images/manufacturing/meatpreparedpackaging.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.meatpreparedpackaging:hover
+{
+  background:url('../../../assets/Images/manufacturing/meatpreparedpackaging_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.milkmanufacturingdry
+{
+  background:url('../../../assets/Images/manufacturing/milkmanufacturingdry.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.milkmanufacturingdry:hover
+{
+  background:url('../../../assets/Images/manufacturing/milkmanufacturingdry_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.milkmanufacturingfluid
+{
+  background:url('../../../assets/Images/manufacturing/milkmanufacturingfluid.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.milkmanufacturingfluid:hover
+{
+  background:url('../../../assets/Images/manufacturing/milkmanufacturingfluid_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.nuts_seeds
+{
+  background:url('../../../assets/Images/manufacturing/nuts_seeds.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.nuts_seeds:hover
+{
+  background:url('../../../assets/Images/manufacturing/nuts_seeds_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.other
+{
+  background:url('../../../assets/Images/manufacturing/other.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.other:hover
+{
+  background:url('../../../assets/Images/manufacturing/other_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.preparedmeals_desserts
+{
+  background:url('../../../assets/Images/manufacturing/preparedmeals_desserts.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.preparedmeals_desserts:hover
+{
+  background:url('../../../assets/Images/manufacturing/preparedmeals_desserts_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.txtright
+{
+    text-align: right;
+}
+
+
+.margin-bottom-10
+{
+    margin-bottom: 10px;
+}
+.margin-top-30
+{
+    margin-top:30px;
+}
+.industry_icons input[type="checkbox"]
+{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  visibility: hidden;
+  margin-top:10px;
+  float:right;
+   z-index: 9;
+    position: absolute;
+    right: 0px;
+}
+.industry_icons input[type=checkbox]:after {
+  content: " ";
+  background-color: #fff;
+  display: inline-block;
+  /* margin-left: 10px; */
+  padding-bottom: 5px;
+  color: #00BFF0;
+  width: 20px;
+  height: 20px;
+  visibility: visible;
+  border: 1px solid #00BFF0;
+  padding-left: 3px; 
+  border-radius: 3px;
+}
+.industry_icons input[type=checkbox]:checked:after {
+  content: "\2714";
+  padding: -5px;
+  font-weight: bold;
+  font-size:12px;
+  color: #fff;
+  border: 1px solid #0097d6;
+  background:#0097d6;
+}
+.industry_icons .col
+{
+    margin:5px;
+}
+.business-name input[type='text']
+{
+  width:100%;
+  text-indent:10px;
+}
+.badge
+{
+  color:#79b236;
+  font-weight: 400;
+  font-size:16px;
+  margin-top:1.5em;
+  background:#fff;
+}
+.icon-block
+{
+  position: relative;
+  color: #0097d6;
+}
+.icon-block:hover{
+  color:#fff;
+}
+.textDiv
+{
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    left: 0px;
+    display: block;
+    /* border: 1px solid; */
+    height: 150px;
+    padding-top: 110px;
+}
+.icon-block:hover > .textDiv{
+  color:#fff;
+}
+
+.required
+{
+    color:#ff0000;
+}
+
+
+.padding-left-30
+{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.margin-bottom-10
+{
+    margin-bottom: 10px;
+}
+.margin-top-30
+{
+    margin-top:30px;
+}
+.txtright
+{
+    text-align: right;
+}
+  .bold
+  {
+    font-weight: 700;
+    color:#333;
+  }
+  .margin-bottom-50
+  {
+    margin-bottom: 50px;
+  }
+  .margin-bottom-30
+  {
+    margin-bottom:30px;
+  }
+  .margin-bottom-40
+  {
+    margin-bottom: 40px;
+  }
+  .margin-bottom-20
+  {
+    margin-bottom: 20px;
+  }
+.add_icon
+{
+    background:url(../../../assets/Images/add.svg) no-repeat;
+    color:#0097d6;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    text-indent: 20px;
+}
+.add_icon:focus
+{
+    outline:none !important;
+}
+.margin-top-20
+{
+    margin-top:20px;
+}
+.main-content input[type='text']
+{
+    width:100%;
+}
+.save
+{
+    padding:10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    float:right;
+}
+.txtright
+{
+    text-align: right;
+}
+.bold
+{
+    font-weight: 600;
+}
+.cookers
+{
+  background:url('../../../assets/Images/equipments/cookers.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.cookers:hover,.selectcookers
+{
+  background:url('../../../assets/Images/equipments/cookers_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.dryers
+{
+  background:url('../../../assets/Images/equipments/dryers.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.dryers:hover
+{
+  background:url('../../../assets/Images/equipments/dryers_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.evaporators
+{
+  background:url('../../../assets/Images/equipments/evaporators.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.evaporators:hover
+{
+  background:url('../../../assets/Images/equipments/evaporators_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fryers
+{
+  background:url('../../../assets/Images/equipments/fryers.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.fryers:hover
+{
+  background:url('../../../assets/Images/equipments/fryers_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.grills
+{
+  background:url('../../../assets/Images/equipments/grills.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.grills:hover
+{
+  background:url('../../../assets/Images/equipments/grills_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.ovens
+{
+  background:url('../../../assets/Images/equipments/ovens.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.ovens:hover
+{
+  background:url('../../../assets/Images/equipments/ovens_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.steamers
+{
+  background:url('../../../assets/Images/equipments/steamers.svg') center no-repeat;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.steamers:hover
+{
+  background:url('../../../assets/Images/equipments/steamers_hover.svg') center no-repeat #0097d6;
+  border:1px solid #c6cacb;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-size:56px;
+}
+.industry_icons .col
+{
+    margin:5px;
+}
+.industry_icons input[type="checkbox"]
+{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  visibility: hidden;
+  margin-top:10px;
+  float:right;
+}
+.industry_icons input[type=checkbox]:after {
+  content: " ";
+  background-color: #fff;
+  display: inline-block;
+  /* margin-left: 10px; */
+  padding-bottom: 5px;
+  color: #00BFF0;
+  width: 20px;
+  height: 20px;
+  visibility: visible;
+  border: 1px solid #00BFF0;
+  padding-left: 3px; 
+  border-radius: 3px;
+}
+.industry_icons input[type=checkbox]:checked:after {
+  content: "\2714";
+  padding: -5px;
+  font-weight: bold;
+  font-size:12px;
+  color: #fff;
+  border: 1px solid #0097d6;
+  background:#0097d6;
+}
+.small
+{
+  font-size:14px;
+  font-weight: 400;
+}
+.required
+{
+  color:#ff0000;
+}
+
+.business-form .fielderror{
+  border:1px solid red !important;
+
+}
+
+
+.errormessage{
+  margin-top:0px;
+  color:#ff0000;
+}

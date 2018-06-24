@@ -1,0 +1,52 @@
+.progress-title {
+  font:  1.5em 'Roboto', sans-serif;
+  margin:20px 0 10px 15px;
+  color: #4D4C4C;
+  font-weight: 500;
+}
+.percentage
+{
+  float:right;font-weight: normal !important;font-size:.9em;
+  margin-right:10px;
+}
+.progressbar
+{
+  margin-top:15px;
+}
+
+.progressbar li {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 1em;
+    background: #79b236;
+    margin: 0 1em;
+    display: inline-block;
+    color: white;
+    position: relative;
+  }
+  .progressbar li::before{
+    content: '';
+    position: absolute;
+    top: .5em;
+    left: -2.35em;
+    width: 2.35em;
+    height: .1em;
+    background: #79b236;
+    z-index: 0;
+  }
+  .progressbar  li:first-child::before {
+    display: none;
+  }
+  .progressbar .active {
+    background: #79b236;
+  }
+  .progressbar .active ~ li {
+    background: #fff;
+    border:1px solid #aab0b2 ;
+  }
+  .progressbar .active ~ li::before {
+    background: #fff;
+    border:1px solid #d8d8d8;
+  }

@@ -1,0 +1,99 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "botpoc"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "js",
+        "js/src",
+        "js/lib",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "style/animate.min.css",
+        "style/propeller.min.css",
+        "css/emoji.css",
+        "style/style.css"
+  
+   
+      ],
+      "scripts": [                             
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../src/assets/Scripts/js/lib/emoji-picker/config.js",
+        "../src/assets/Scripts/js/lib/emoji-picker/emoji-picker.js",
+        "../src/assets/Scripts/js/lib/emoji-picker/jquery.emojiarea.js",
+        "../src/assets/Scripts/js/lib/emoji-picker/util.js",
+
+        "../src/assets/Scripts/js/lib/bootstrap.min.js",
+        "../src/assets/Scripts/js/lib/jquery-ui.min.js",
+        "../src/assets/Scripts/js/lib/jquery.min.js",
+        "../src/assets/Scripts/js/lib/popper.min.js",
+        "../src/assets/Scripts/js/lib/propeller.js",
+        "../src/assets/Scripts/js/lib/propeller.min.js",
+        "../src/assets/Scripts/js/lib/uuidv1.js",
+
+        "../src/assets/Scripts/js/src/apiService.js",
+
+        "../src/assets/Scripts/js/src/app.js",
+        "../src/assets/Scripts/js/src/cards.js",
+        "../src/assets/Scripts/js/src/messageTemplates.js",
+        "../src/assets/Scripts/js/src/utils.js",
+
+        "../src/assets/Scripts/js/require-setup.js",
+        "../src/assets/Scripts/js/settings.js",
+        "../src/assets/Scripts/js/require.js"
+
+        
+
+
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

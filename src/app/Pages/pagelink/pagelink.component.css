@@ -1,0 +1,83 @@
+.tabsContainer {
+    position: absolute;
+    right: 0px;
+    background:#003768 !important;
+  }
+  
+  .tab-content {
+    padding: 35px 0 35px 25px;
+    color: #688b9b;
+  }
+  
+  .tab-content:first-child {
+    margin-top: 115px;
+  }
+  
+  .tab-content:nth-child(2) {
+    color: #fff;
+  }
+  
+
+  
+  .tab-title {
+    font: bold 1.5em 'Roboto', serif;
+    margin: 5px 0px 10px 0px;
+  }
+  
+  .tab-subtitle {
+    font: 1.2em 'Roboto', serif;
+    font-weight: 300;
+  }
+  
+  .tab-icon {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: -21px;
+    border-radius: 42px;
+    background-color: #e5e5e5;
+    font: normal 1.4em 'Roboto', serif;
+    padding:8px 10px 10px 15px;
+  }
+  
+  .tab-content:nth-child(1) .tab-icon {
+    background-color: #79b236;
+  }
+  
+  .tab-content:nth-child(2) .tab-icon {
+    background-color: #0097d6;
+  }
+
+  .setcurrentColor{
+    background-color: #0097d6 !important;
+    color: #fff !important;
+  }
+
+  .defaultcolor{
+    color: #688b9b !important;
+  }
+
+  .currentcolor{
+    color: #fff !important;
+  }
+
+ .notstart{
+    background-color: #e5e5e5 !important;
+    color: #688b9b !important;
+  }
+
+  .completeinfo{
+    background-color: #79b236 !important;
+
+  }
+
+  .showactive{
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+  }
+
+  .completecurrentstatus{
+    visibility: hidden;
+  }

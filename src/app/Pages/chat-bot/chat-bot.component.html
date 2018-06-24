@@ -1,0 +1,8 @@
+<div>
+  <a class="popover footDiv" id="webChat" data-toggle="popover">
+    <img src="assets/Images/Chaticon.svg" width="72" height="72" style="margin-top: 10px;margin-left: -10px" (click)="showchatbox()">
+    <div id="chatsection" [ngClass]="{'VisibleChat': showchatboxDetails == true,'HideChat':showchatboxDetails == false}" >  
+        <iframe [src]='chatlink | safteUrl'  class="ShowIFrameCheckbox" ></iframe>                
+    </div>
+  </a>
+</div>
